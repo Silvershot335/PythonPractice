@@ -1,18 +1,5 @@
 import math
 
-
-math.floor(1.2)
-1
-
-math.floor(-0.5)
--1
-
-
-def round_down(n, decimals=0):
-    multiplier = 1 ** decimals
-    return math.floor(n * multiplier) / multiplier
-
-
 with open("input.txt", "r") as work:
     x = work.read().split()
     print(x)
@@ -22,10 +9,25 @@ with open("input.txt", "r") as work:
 
         z = (int(y) / 3)
 
-        print(round_down(z))
+        print(math.trunc(z))
 
-        c = (int(z) - 2)
+        c = (int(math.trunc(z)) - 2)
 
         print(c)
 
+        with open("output.txt", "a") as output:
+        
+           output.write(str(c))
+           output.write(",")
+
+with open("output.txt", "r") as work:
+    d = work.read().split(",")
+    print(d)
+
+    t = 0
+    for number in d:
+      if number != "":
+          t =  (t + int(number))
+print(t)
+      
         
