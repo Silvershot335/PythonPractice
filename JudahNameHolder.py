@@ -6,7 +6,7 @@ with open('namesforjudah.txt', 'a') as b:
 
     if 'new' in input():
         print("Enter New Nickname") 
-        b.write(", " + input(""))
+        b.write(input("")+", ")
  
 with open('namesforjudah.txt', 'r') as c:
 
