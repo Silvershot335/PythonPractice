@@ -1,6 +1,8 @@
 a = "judah is judy"
 
-b = a.rsplit(" ")
+b = a.split()
+
+print(b)
 
 b.reverse()
 
