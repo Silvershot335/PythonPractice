@@ -29,8 +29,7 @@ if "implicit" in calc.casefold():
             fxj = math.factorial(int(attempts) - int(implicit))
             b = (fx) / (fj * fxj)
             f = (a * b)
-            print("There's is a " "{:.2%}".format(
-                f) + " of having " + implicit + " implicits in " + attempts + " attempts.")
+            print("There's is a " "{:.2%}".format(f) + " of having " + implicit + " implicits in " + attempts + " attempts.")
 
 if "brick" in calc.casefold():
             x = input("How Many Attempts?")
