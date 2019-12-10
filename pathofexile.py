@@ -1,5 +1,7 @@
 import math
 
+#
+
 calc = input("What calculation would you like to make:\nArmor\nEvasion\nImplicit\nBrick\nHit ENTER to exit")
 
 if "armor" in calc.casefold():
